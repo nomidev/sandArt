@@ -8,9 +8,12 @@
 
 .wrap {
 	width: 100%;
+	min-width: 1200px;
 	height: 100%;
+	background-color: #e2e2e2;
 }
 
+/* header */
 .header {
 	position: absolute;
 	width: 200px;
@@ -24,11 +27,10 @@
 	line-height: 140px;
 	background-color: #004098;
 	text-align: center;
-	font-size: 16px;
-	color: #fff;
 }
-.header .gnb {
-
+.header h1 a {
+	font-size: 18px;
+	color: #fff;
 }
 .header .gnb > li {
 	position: relative;
@@ -72,7 +74,7 @@
 .header .footer address {
 	text-align: center;
 	line-height: 20px;
-	font-family: '돋움', 'Dotum';
+	font-family: '돋움', 'Dotum', 'Noto Sans';
 	font-size: 12px;
 	font-style: normal;
 }
@@ -82,12 +84,125 @@
 	border-top: 1px solid #4c4c4c;
 	text-align: center;
 	line-height: 20px;
-	font-family: '돋움', 'Dotum';
+	font-family: '돋움', 'Dotum', 'Noto Sans';
 	font-size: 12px;
 	font-style: normal;
 }
 
 .container {
 	padding-left: 200px;
+	height: 100%;
 }
 
+/* main */
+.container .section_left {
+	float: left;
+	padding: 0 55px;
+	width: 490px;
+	height: 100%;
+	background: #afdbe5 url(../images/main_visual.png) no-repeat 0 194px;
+}
+.container .section_left h2 {
+	margin-top: 55px;
+}
+.container .section_left p {
+	margin-top: 20px;
+	line-height: 28px;
+}
+.container .section_right {
+	float: left;
+	width: 400px;
+	height: 100%;
+	background-color: #fff;
+}
+.container .section_right .notice,
+.container .section_right .ceri_info,
+.container .section_right .date_info,
+.container .section_right .cust_info {
+	overflow: hidden;
+}
+.container .section_right .notice h3,
+.container .section_right .ceri_info h3,
+.container .section_right .date_info h3,
+.container .section_right .cust_info h3 {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.container .section_right .notice {
+	padding: 0 30px;
+	height: 255px;
+}
+.container .section_right .notice ul li {
+	line-height: 20px;
+	font-size: 12px;
+}
+.container .section_right .notice ul li a {
+	overflow: hidden;
+	float: left;
+	padding-right: 15px;
+	width: 280px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.container .section_right .notice ul li span {
+	float: left;
+	width: 45px;
+}
+.container .section_right .ceri_info {
+	padding: 0 30px;
+	height: 220px;
+	background: url(../images/main_bg01.png) no-repeat;
+	color: #fff;
+}
+.container .section_right .ceri_info p {
+	line-height: 22px;
+	font-size: 12px;
+	font-family: '돋움', 'Dotum', 'Noto Sans';
+}
+.container .section_right .ceri_info a.btn {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 7px 30px;
+	border: 1px solid #fff;
+	background-color: #001668;
+	font-size: 12px;
+	font-family: '돋움', 'Dotum', 'Noto Sans';
+	color: #fff;
+}
+.container .section_right .date_info {
+	padding: 0 30px;
+	height: 255px;
+}
+.container .section_right .date_info table {
+	width: 100%;
+	border-top: 2px solid #b2b2b2;
+}
+.container .section_right .date_info table tr {
+	border-bottom: 1px solid #b2b2b2;
+}
+.container .section_right .date_info table th,
+.container .section_right .date_info table td {
+	padding: 0 10px;
+	line-height: 30px;
+	text-align: left;
+	font-size: 12px;
+	font-family: '돋움', 'Dotum', 'Noto Sans';
+}
+.container .section_right .cust_info {
+	padding: 0 30px;
+	height: 220px;
+	background: url(../images/main_bg02.png) no-repeat;
+	color: #fff;
+}
+.container .section_right .cust_info p {
+	line-height: 20px;
+	font-size: 12px;
+	font-family: '돋움', 'Dotum', 'Noto Sans';
+}
+.container .section_right .cust_info p.num {
+	font-family: 'Arial', 'Noto Sans';
+	line-height: 58px;
+	font-weight: bold;
+	font-size: 40px;
+}

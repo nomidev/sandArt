@@ -38,6 +38,14 @@ q:after {content: ''; content: none;}
 
 /* table */
 table {border-collapse: collapse; border-spacing: 0;}
+table caption {
+	visibility: hidden;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
 
 /* button ie7 double padding hack */
 button,

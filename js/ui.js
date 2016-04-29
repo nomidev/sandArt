@@ -18,6 +18,10 @@ $(function() {
 			var $that = $(this);
 			var $lnb = $(this).siblings("ul");
 
+			lnbBg.animate({
+				left: 0
+			}, "fast");
+
 			if ($lnb.is(":visible")) {
 				$that.removeClass("on");
 				$lnb.hide("fast");
@@ -25,6 +29,7 @@ $(function() {
 					left: 0
 				}, "fast");
 			} else {
+				$gnb.children("ul").hide();
 				$that.addClass("on");
 				lnbBg.animate({
 					left: 200
