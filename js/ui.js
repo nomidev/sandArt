@@ -41,4 +41,11 @@ $(function() {
 			return false;
 		}
 	});
+
+	$("html, body").not(".gnb").on("click", function() {
+		$(".gnb > li").children("ul").hide();
+		$(".lnb_bg").animate({
+			left: 0
+		}, "fast");
+	});
 });
