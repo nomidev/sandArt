@@ -59,7 +59,7 @@ body {
 	border-bottom: 1px solid #292929;
 }
 .lnb_bg {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 200px;
