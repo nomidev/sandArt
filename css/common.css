@@ -17,7 +17,6 @@ article, aside, canvas, details, embed, figure, figcaption, footer, header, hgro
 
 /* initialize font */
 body {font: 400 1em 'Noto Sans', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Apple SD Gothic Neo', 'arial', 'sans-serif'; -webkit-font-smoothing: antialiased; color: #333333;}
-p {font-family: 'Nanum Barun Gothic';}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
